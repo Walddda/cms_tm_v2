@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<form action="{{ path('login') }}" method="post">
+		<footer>
+			<div class="limiter">
+				<div class="container-table100">
+					<div class="wrap-table100">
+						<div class="table100">
+							<br><br>
+							<table>
+								<thead>
+									<th colspan="2">
+										Login
+									</th>
+								</thead>
+								<tr>
+									<td colspan="1">
+										<label for="username">Name:</label>
+									</td>
+									<td colspan="1">
+										<input type="text" id="username" name="_username" style="border: black solid 1px" value="{{ last_username }}"/>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="1">
+										<label for="password">Password:</label>
+									</td>
+									<td colspan="1">
+										<input type="password" id="password" name="_password" style="border: black solid 1px"/>
+									</td>
+								</tr>
+								<tr colspan="2">
+									<td>
+										<button type="submit">login</button>
+									</td>
+								</tr>
+								{% if error %}
+									<tr colspan="2">
+										<td>{{ error.messageKey|trans(error.messageData, 'security') }}</td>
+									</tr>
+								{% endif %}
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</form>
+{% endblock %}

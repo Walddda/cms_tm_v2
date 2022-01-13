@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to top, #000000 0%, #d60303 100%);
+  background-attachment: fixed;
+}
+header {
+  color: white;
+}
+header,
+footer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header h1 {
+  font-size: 60px;
+}
+.animation {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.paper-plane {
+  position: absolute;
+  height: 100px;
+  top: 50%;
+  left: 0%;
+}
+
+#scrollStart {
+  padding: 5px 15px 5px 15px;
+  color: white;
+  background-color: #000000;
+  border-radius: 50%;
+  font-size: large;
+}
+
+.half {
+  height: 40vh;
+}
+
+button,
+a {
+  text-decoration: none;
+}
+
+.detail {
+  color: #808080;
+}
+
+.specialBtn {
+  color: white;
+}
+
+th {
+  color: white;
+}
+
+.trigger {
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.triggerActive {
+  background-color: #a492e2;
+  font-weight: normal;
+  cursor: help;
+}
+
+.addBody {
+  display: none;
+}
